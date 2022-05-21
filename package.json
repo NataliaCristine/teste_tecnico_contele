@@ -1,0 +1,25 @@
+{
+  "name": "contele_teste_tecnico",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/app.js",
+    "use": "npm run dev"
+  },
+  "author": "natalia",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "knex": "^2.0.0",
+    "pg": "^8.7.3",
+    "sucrase": "^3.21.0",
+    "uuid": "^8.3.2",
+    "yup": "^0.32.11"
+  },
+  "type": "module",
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
