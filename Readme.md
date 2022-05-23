@@ -37,3 +37,5 @@ Para rodar o projeto deve utilizar o comando:
 ### Utilização
 
 Para utilizar deve utilizar um API Client como Insomnia. No http://localhost:3000
+
+Documentação no http://localhost:3000/api-documentation/#/
