@@ -1,8 +1,8 @@
 import express from "express";
 import { initRouter } from "./routes/index.js";
 import { errorHandler } from "./middlewares/error.middleware.js";
-// import swaggerUiExpress from "swagger-ui-express";
-// import swaggerDocument from "../swagger.json";
+import swaggerUiExpress from "swagger-ui-express";
+import swaggerDocument from "./../swagger.json" assert { type: "json" };
 
 const app = express();
 
@@ -12,11 +12,11 @@ initRouter(app);
 
 app.use(errorHandler);
 
-// app.use(
-//   "/api-documentation",
-//   swaggerUiExpress.serve,
-//   swaggerUiExpress.setup(swaggerDocument)
-// );
+app.use(
+  "/api-documentation",
+  swaggerUiExpress.serve,
+  swaggerUiExpress.setup(swaggerDocument)
+);
 
 app.listen(3000, () => {
   console.log("App rodando na porta: http://localhost:3000");
